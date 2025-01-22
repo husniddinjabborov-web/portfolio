@@ -1,0 +1,228 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; 
+    color: #333; 
+}
+
+header {
+    background-color: #3498db; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #ecf0f1; 
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(52, 152, 219, 0.6); /* Soft blue overlay */
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.hero .btn {
+    background-color: #1abc9c; /* Soft green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #16a085; /* Darker green for hover effect */
+}
+
+.portfolio {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #34495e; /* Slightly lighter shade of grayish blue */
+}
+.portfolio-links {
+    display: flex; /* Havolalarni yonma-yon joylashtiradi */
+    justify-content: center; /* Markazda joylashtiradi */
+    gap: 20px; /* Havolalar orasidagi masofa */
+    margin-top: 20px; /* Yuqoridan masofa */
+}
+
+.portfolio-links a {
+    text-decoration: none; /* Ostiga chiziq qo'shishni olib tashlaydi */
+    padding: 10px 20px; /* Havolalarga ichki masofa qo'shadi */
+    border: 2px solid #007BFF; /* Ramka qo'shadi */
+    border-radius: 5px; /* Burchaklarni yumaloq qiladi */
+    color: #007BFF; /* Matn rangini o'zgartiradi */
+    font-weight: bold; /* Matnni qalin qiladi */
+    transition: all 0.3s ease; /* Havolaga o'tish effekti qo'shadi */
+}
+
+.portfolio-links a:hover {
+    background-color: #007BFF; /* Fon rangini o'zgartiradi */
+    color: #fff; /* Matn rangini oq qiladi */
+    transform: scale(1.05); /* Havolani kattalashtiradi */
+}
+
+
+.skills {
+    background-color: #ecf0f1; /* Soft light gray */
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.html {
+    width: 90%;
+    background-color: #e67e22; /* Soft orange */
+}
+
+.css {
+    width: 85%;
+    background-color: #9b59b6; /* Soft purple */
+}
+
+.js {
+    width: 80%;
+    background-color: #f39c12; /* Soft yellow */
+}
+
+.contact {
+    background-color: #ecf0f1; /* Soft light gray */
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.contact .socials {
+    margin-top: 20px;
+}
+
+.contact .socials a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #3498db; /* Soft blue for links */
+    font-size: 1.5rem;
+}
+
+.contact .socials a:hover {
+    color: #1abc9c; /* Soft green on hover */
+}
+
+footer {
+    background-color: #3498db; /* Soft blue */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
